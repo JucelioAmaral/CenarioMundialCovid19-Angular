@@ -1,0 +1,16 @@
+    <div class="container">
+    <table id="customers">
+    <thead>
+        <tr>
+            <th scope="col">Pais</th>
+            <th scope="col">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let f of cases_order'>
+            <td  mat-header-cell >{{f.Country}}</td>
+            <td>{{f.TotalConfirmed | currency : 'R$'}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
